@@ -81,7 +81,7 @@ const MAX_IMAGES = argv.count;
 const imagesDir = argv.imagesDir;
 const cacheDir = argv.cacheDir;
 
-const imagesRegex = /\('beforeend',\s*'(.*)'\)/;
+const imagesRegex = /\('beforeend'\s*,\s*'(.*)'\)/;
 
 function parseImgsFromStr(str) {
   const result = imagesRegex.exec(str);
